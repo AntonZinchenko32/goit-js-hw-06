@@ -14,7 +14,7 @@ const images = [
 ];
 
 const markup = images
-  .map((image) => `<li><img alt="${image.alt}" src="${image.url}"></li>`)
+  .map((image) => `<li><img alt="${image.alt}" src="${image.url}" width="800" height="400"></li>`)
   .join("");
 
 const list = document.querySelector(".gallery");
