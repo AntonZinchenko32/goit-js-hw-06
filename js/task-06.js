@@ -5,7 +5,8 @@ textInput.addEventListener("blur", () => {
     
     textInput.classList.remove("invalid", "valid");
 
-    if (textInput.value.length == textInput.getAttribute("data-length")) {
+    if (textInput.value.length === Number(textInput.getAttribute("data-length"))) {
+        
         textInput.classList.add("valid");
     }
     else {
